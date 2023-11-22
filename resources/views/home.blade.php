@@ -4,7 +4,7 @@
 
 @section('main')
 <div>
-    <h1 class="text-center mb-5 fw-bold m-4">¡Bienvenidos a GXGames!</h1>
+    <h1 class="text-center mb-5 fw-bold m-4">¡Bienvenidos a CasaCucha!</h1>
     <div class="row mb-5 d-flex align-items-center">
         <div class="col-lg-6 fs-3 text-center">
             <p><strong>Venta de videojuegos multiplataforma </strong>y mucho más, donde podes encontrar todos los juegos que
