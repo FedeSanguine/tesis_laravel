@@ -16,15 +16,15 @@ class ConsolaSeeder extends Seeder
         DB::table('consolas')->insert([
             [
                 'consolas_id' => 1,
-                'nombre' => 'PS4',
+                'nombre' => 'Grande',
             ],
             [
                 'consolas_id' => 2,
-                'nombre' => 'Xbox One',
+                'nombre' => 'Mediano',
             ],
             [
                 'consolas_id' => 3,
-                'nombre' => 'PC',
+                'nombre' => 'Chico',
             ],
         ]);
     }

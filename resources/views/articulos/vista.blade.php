@@ -17,7 +17,7 @@
             <form action="{{ route('cart.addItem') }}" method="POST">
             @csrf
             <input type="hidden" name="articulos_id" value="{{ $articulo->articulos_id }}">
-            <button type="submit" class="btn btn-dark w-100 fw-bold">AGREGAR AL CARRITO</button>
+            <button type="submit" class="btn btn-dark w-100 fw-bold">CONTACTAR</button>
         </form>
             </div>
         </div>

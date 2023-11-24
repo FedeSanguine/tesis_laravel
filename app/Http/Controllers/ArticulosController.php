@@ -70,7 +70,7 @@ class ArticulosController extends Controller
 
             return redirect()
                 ->route('admin.admin-articulos')
-                ->with('feedback.message', 'El articulo <b>' . e($data['nombre']) . '</b> se agrego con éxito.');
+                ->with('feedback.message', '<b>' . e($data['nombre']) . '</b> se agrego con éxito.');
         } catch (\Exception $e) {
             return redirect()
                 ->route('articulos.nuevoProceso')
@@ -113,12 +113,12 @@ class ArticulosController extends Controller
 
             return redirect()
                 ->route('admin.admin-articulos')
-                ->with('feedback.message', 'El articulo <b>' . e($articulo->nombre) . '</b> se editó con éxito.');
+                ->with('feedback.message', '<b>' . e($articulo->nombre) . '</b> se editó con éxito.');
         } catch (\Exception $e) {
             return redirect()
                 ->route('articulos.editarOk', ['id' => $id])
                 ->withInput()
-                ->with('feedback.message', 'Ocurrió un error al tratar de editar el articulo. Por favor, probá de nuevo en un rato. Y si el problema persiste, comunicate con nosotros.')
+                ->with('feedback.message', 'Ocurrió un error al tratar de editar el animal. Por favor, probá de nuevo en un rato. Y si el problema persiste, comunicate con nosotros.')
                 ->with('feedback.type', 'danger');
         }
     }
@@ -147,12 +147,12 @@ class ArticulosController extends Controller
 
             return redirect()
                 ->route('admin.admin-articulos')
-                ->with('feedback.message', 'El articulo <b>' . e($articulo->nombre) . '</b> se eliminó con éxito.');
+                ->with('feedback.message', '<b>' . e($articulo->nombre) . '</b> se eliminó con éxito.');
         } catch (\Exception $e) {
             return redirect()
                 ->route('articulos.eliminarOk', ['id' => $id])
                 ->withInput()
-                ->with('feedback.message', 'Ocurrió un error al tratar de eliminar el articulo. Por favor, probá de nuevo en un rato. Y si el problema persiste, comunicate con nosotros.')
+                ->with('feedback.message', 'Ocurrió un error al tratar de eliminar el animals. Por favor, probá de nuevo en un rato. Y si el problema persiste, comunicate con nosotros.')
                 ->with('feedback.type', 'danger');
         }
     }

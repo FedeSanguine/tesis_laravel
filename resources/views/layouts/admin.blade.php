@@ -42,16 +42,16 @@
                                 <a class="nav-link active " href="{{ route('admin.dashboard') }}">Dashboard</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="{{ route('compras.compras') }}">Compras de usuarios</a>
+                                <a class="nav-link active" href="{{ route('compras.compras') }}">Adopciones de usuarios</a>
                             </li>
-                                <a class="nav-link active " href="{{ route('articulos.index') }}">Catálogo</a>
+                                <a class="nav-link active " href="{{ route('articulos.index') }}">Publicaciones</a>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Administrar
                                 </a>
                                 <ul class="dropdown-menu navbar-dark bg-dark">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ route('admin.admin-articulos') }}">Articulos</a>
+                                        <a class="nav-link" href="{{ route('admin.admin-articulos') }}">Animales</a>
 
                                     </li>
                                     <li class="nav-item">

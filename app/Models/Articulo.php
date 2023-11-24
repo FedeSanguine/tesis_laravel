@@ -56,7 +56,6 @@ class Articulo extends Model
         return [
             'nombre' => 'required',
             'formato' => 'required',
-            'precio' => 'required|numeric',
             'generos_id' => 'required|numeric|exists:generos',
             'consolas_id' => 'required|numeric|exists:consolas',
         ];
@@ -67,8 +66,6 @@ class Articulo extends Model
         return [
             'nombre.required' => 'Nombre del articulo',
             'formato.required' => 'formato (Digital, Fisico)',
-            'precio.required' => 'Precio del articulo',
-            'precio.numeric' => 'El precio tiene que ser un número',
             'generos_id.required' => 'Genero del articulo',
             'generos_id.numeric' => 'El articulo debe ser un numero entero',
             'generos_id.exists' => 'El genero provisto no existe en la base de datos',
@@ -78,21 +75,6 @@ class Articulo extends Model
         ];
     }
 
-
-    protected function precio(): Attribute
-    {
-        return Attribute::make(
-            get: fn (int $value): float  => $value / 100,
-            set: fn (float $value)       => $value * 100,
-        );
-    }
-    protected function price(): Attribute
-    {
-        return Attribute::make(
-            get: fn (int $value): float  => $value / 100,
-            set: fn (float $value)       => $value * 100,
-        );
-    }
 
     public function generos(): BelongsTo
     {

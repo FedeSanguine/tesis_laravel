@@ -21,22 +21,15 @@
         @endif
     </div>
     <div class="mb-3">
-        <label for="formato" class="form-label">Formato</label>
+        <label for="formato" class="form-label">Edad</label>
         <input type="text" id="formato" name="formato" class="form-control" @error('formato') aria-describedby="error-formato" @enderror value="{{ old('formato', $articulo->formato) }}">
         @error('formato')
         <div class="text-danger" id="error-formato">{{ $message }}</div>
         @enderror
     </div>
-    <div class="mb-3">
-        <label for="precio" class="form-label">Precio</label>
-        <input type="text" id="precio" name="precio" class="form-control" @error('precio') aria-describedby="error-precio" @enderror value="{{ old('precio', $articulo->precio) }}">
-        @error('precio')
-        <div class="text-danger" id="error-precio">{{ $message }}</div>
-        @enderror
-    </div>
 
     <div class="mb-3">
-        <label for="consolas_id" class="form-label">Consola</label>
+        <label for="consolas_id" class="form-label">Tamaño</label>
         <select name="consolas_id" id="consolas_id" class="form-control" @error('consolas_id') aria-describedby="error-consolas_id" @enderror>
             <option value=""></option>
             @foreach($consolas as $consola)

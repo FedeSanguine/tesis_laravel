@@ -4,15 +4,15 @@
 ?>
 @extends('layouts.admin')
 
-@section('title', 'Listado de Articulos')
+@section('title', 'Listado de Animales')
 
 @section('main')
 
-<h1 class="mb-3">Administrar Articulos</h1>
+<h1 class="mb-3">Administrar Animales</h1>
 
 @auth
 <div class="mb-3">
-    <a href="{{ route('articulos.nuevoFormulario') }}" class="btn btn-sm btn-dark m-1">Agregar un nuevo articulo</a>
+    <a href="{{ route('articulos.nuevoFormulario') }}" class="btn btn-sm btn-dark m-1">Agregar un nuevo animal</a>
 </div>
 @endauth
 
@@ -21,10 +21,9 @@
         <tr>
             <th width="9%">Imagen</th>
             <th>Nombre</th>
-            <th>Consola</th>
+            <th>Tamaño</th>
             <th>Género</th>
-            <th>Formato</th>
-            <th>Precio</th>
+            <th>Edad</th>
             <th>Descripción</th>
             <th>Acciones</th>
 
@@ -44,7 +43,6 @@
             <td>{{ $articulo->consolas->nombre }}</td>
             <td>{{ $articulo->generos->nombre }}</td>
             <td>{{ $articulo->formato }}</td>
-            <td>$ {{ $articulo->precio }}</td>
             <td>{{ $articulo->descripcion }}</td>
             <td>
                 <div class="d-flex gap-1">

@@ -16,8 +16,6 @@ return new class extends Migration
             $table->string('nombre', 100);
             $table->string('title', 100)->nullable();
             $table->string('formato', 100);
-            $table->unsignedInteger('precio');
-            $table->unsignedInteger('price')->nullable();
             $table->text('descripcion')->nullable();
             $table->string('imagen', 255)->nullable();
             $table->string('descripcion_imagen', 255)->nullable();

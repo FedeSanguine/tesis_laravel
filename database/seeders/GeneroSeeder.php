@@ -16,15 +16,11 @@ class GeneroSeeder extends Seeder
         DB::table('generos')->insert([
             [
                 'generos_id' => 1,
-                'nombre' => 'Deporte',
+                'nombre' => 'Masculino',
             ],
             [
                 'generos_id' => 2,
-                'nombre' => 'Acción',
-            ],
-            [
-                'generos_id' => 3,
-                'nombre' => 'Disparos',
+                'nombre' => 'Femenino',
             ],
         ]);
     }

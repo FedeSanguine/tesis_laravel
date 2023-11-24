@@ -30,17 +30,14 @@ use Illuminate\Support\Facades\Storage;
                         </div>
 
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><span class="fw-bold">Consola:</span>
+                            <li class="list-group-item"><span class="fw-bold">Tamaño:</span>
                                 <p class="text-dark fst-italic">{{ $articulo->consolas->nombre }}</p>
                             </li>
-                            <li class="list-group-item"><span class="fw-bold">Formato:</span>
+                            <li class="list-group-item"><span class="fw-bold">Edad:</span>
                                 <p class="text-dark fst-italic">{{ $articulo->formato }}</p>
                             </li>
                             <li class="list-group-item"><span class="fw-bold">Genero:</span>
                                 <p class="text-dark fst-italic">{{ $articulo->generos->nombre }}</p>
-                            </li>
-                            <li class="list-group-item"><span class="fw-bold">Precio:</span>
-                                <p class="text-dark fst-italic">$ {{ $articulo->precio }}</p>
                             </li>
                         </ul>
 

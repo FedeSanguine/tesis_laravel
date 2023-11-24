@@ -44,7 +44,7 @@
                                 <a class="nav-link active" href="{{ route('noticias.index') }}">Noticias</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="{{ route('articulos.index') }}">Catalogo</a>
+                                <a class="nav-link active" href="{{ route('articulos.index') }}">Publicaciones</a>
                             </li>
 
                             @auth
@@ -60,7 +60,7 @@
                             
                             @if (auth()->user()->rol == 'administrador')
                                 <li class="nav-item">
-                                <a class="nav-link active" href="{{ route('admin.dashboard') }}">Admin</a>
+                                <a class="nav-link active" href="{{ route('admin.dashboard') }}">Administrar</a>
                                 </li>
                             @endif
                             @else
