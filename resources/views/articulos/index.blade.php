@@ -22,8 +22,9 @@
                 <h2 class="fs-5 fw-bold text-center">{{ $articulo->nombre }}</h2>
             </div>
             <ul class="list-group list-group-flush h-100">
-                <li class="list-group-item"><span class="fw-bold">Edad: </span> {{ $articulo->consolas->nombre }}</li>
-                <li class="list-group-item"><span class="fw-bold">Tamaño: </span>{{ $articulo->formato }}</li>
+                <li class="list-group-item"><span class="fw-bold">Refugio: </span> {{ $articulo->refugio }}</li>
+                <li class="list-group-item"><span class="fw-bold">Tamaño: </span> {{ $articulo->consolas->nombre }}</li>
+                <li class="list-group-item"><span class="fw-bold">Edad: </span>{{ $articulo->formato }}</li>
                 <li class="list-group-item"><span class="fw-bold">Género: </span> {{ $articulo->generos->nombre }}</li>
             </ul>
             <div class="card-body">

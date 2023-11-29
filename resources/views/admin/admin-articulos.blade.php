@@ -21,6 +21,7 @@
         <tr>
             <th width="9%">Imagen</th>
             <th>Nombre</th>
+            <th>Refugio</th>
             <th>Tamaño</th>
             <th>Género</th>
             <th>Edad</th>
@@ -40,6 +41,7 @@
             @endif
             </td>
             <td>{{ $articulo->nombre }}</td>
+            <td>{{ $articulo->refugio }}</td>
             <td>{{ $articulo->consolas->nombre }}</td>
             <td>{{ $articulo->generos->nombre }}</td>
             <td>{{ $articulo->formato }}</td>

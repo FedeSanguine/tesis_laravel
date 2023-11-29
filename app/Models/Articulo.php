@@ -49,7 +49,7 @@ class Articulo extends Model
 {
     protected $primaryKey = "articulos_id";
 
-    protected $fillable = ['generos_id', 'consolas_id', 'nombre', 'title', 'formato', 'precio', 'price', 'descripcion', 'imagen', 'descripcion_imagen'];
+    protected $fillable = ['generos_id', 'consolas_id', 'nombre','refugio', 'title', 'formato', 'precio', 'price', 'descripcion', 'imagen', 'descripcion_imagen'];
 
     public static function validationRules(): array
     {

@@ -20,7 +20,13 @@
         <div class="text-danger" id="error-nombre">{{ $message }}</div>
         @endif
     </div>
-
+    <div class="mb-3">
+        <label for="refugio" class="form-label">Refugio</label>
+        <input type="text" id="refugio" name="refugio" class="form-control" @error('refugio') aria-describedby="error-refugio" @enderror value="{{ old('refugio') }}">
+        @error('refugio')
+        <div class="text-danger" id="error-refugio">{{ $message }}</div>
+        @endif
+    </div>
     <div class="mb-3">
         <label for="formato" class="form-label">Edad</label>
         <input type="text" id="formato" name="formato" class="form-control" @error('formato') aria-describedby="error-formato" @enderror value="{{ old('formato') }}">

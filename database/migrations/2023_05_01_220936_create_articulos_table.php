@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('articulos', function (Blueprint $table) {
             $table->id('articulos_id');
             $table->string('nombre', 100);
+            $table->string('refugio', 100)->nullable();
             $table->string('title', 100)->nullable();
             $table->string('formato', 100);
             $table->text('descripcion')->nullable();

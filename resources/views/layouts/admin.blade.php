@@ -41,9 +41,6 @@
                             <li class="nav-item">
                                 <a class="nav-link active " href="{{ route('admin.dashboard') }}">Dashboard</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="{{ route('compras.compras') }}">Adopciones de usuarios</a>
-                            </li>
                                 <a class="nav-link active " href="{{ route('articulos.index') }}">Publicaciones</a>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -53,9 +50,6 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{ route('admin.admin-articulos') }}">Animales</a>
 
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="{{ route('admin.admin-noticias') }}">Noticias</a>
                                     </li>
                                 </ul>
                         </ul>
@@ -77,7 +71,7 @@
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top ">
             <div class="text-center text-muted fs-6">
-                <p>GXGames 2023</p>
+                <p>Casa Cucha 2023</p>
                 <p>Todos los derechos reservados®</p>
 
             </div>

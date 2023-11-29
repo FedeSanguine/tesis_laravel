@@ -41,9 +41,6 @@
                                 <a class="nav-link active" href="{{ route('home') }}">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="{{ route('noticias.index') }}">Noticias</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link active" href="{{ route('articulos.index') }}">Publicaciones</a>
                             </li>
 
@@ -86,7 +83,7 @@
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top ">
             <div class="text-center text-muted fs-6">
-                <p>GXGames 2023</p>
+                <p>CasaCucha 2023</p>
                 <p>Todos los derechos reservados®</p>
 
             </div>
