@@ -85,7 +85,7 @@
         <div class="text-danger" id="error-descripcion_imagen">{{ $message }}</div>
         @enderror
     </div>
-    <button type="submit" class="btn btn-primary">Publicar</button>
+    <button type="submit" class="btn btn-success">Publicar</button>
 
 </form>
 @endsection

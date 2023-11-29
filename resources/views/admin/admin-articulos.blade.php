@@ -37,7 +37,7 @@
             @if($articulo->imagen !== null && Storage::has('imgs/' . $articulo->imagen))
             <img width="65%" class="mw-80" src="{{ Storage::url('imgs/' . $articulo->imagen) }}" alt="{{ $articulo->descripcion_imagen }}">
             @else
-            <img width="65%" class="mw-100" src="../../img/home.png" alt="imagen de carga"></p>
+            <img width="65%" class="mw-100" src="../img/home.png" alt="imagen de carga"></p>
             @endif
             </td>
             <td>{{ $articulo->nombre }}</td>

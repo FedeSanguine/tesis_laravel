@@ -1,0 +1,7 @@
+.mi-navbar {
+    background-color: #CC6600; 
+  }
+
+  .mi-navbar:hover {
+    background-color:#CC6600; /* Color de fondo al hacer hover */
+}

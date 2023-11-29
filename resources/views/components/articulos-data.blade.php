@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Storage;
                         @if($articulo->imagen !== null && Storage::has('imgs/' . $articulo->imagen))
                         <img class="card-img rounded-4  border-dark" src="{{ Storage::url('imgs/' . $articulo->imagen) }}" alt="{{ $articulo->descripcion_imagen }}">
                         @else
-                        <img class="card-img rounded-4  border-dark" src="../../img/home.png" alt="imagen de carga"></p>
+                        <img class="card-img rounded-4  border-dark" src="../img/home.png" alt="imagen de carga"></p>
                         @endif
                     </div>
 
@@ -30,6 +30,9 @@ use Illuminate\Support\Facades\Storage;
                         </div>
 
                         <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><span class="fw-bold">Refugio:</span>
+                                <p class="text-dark fst-italic">{{ $articulo->refugio }}</p>
+                            </li>
                             <li class="list-group-item"><span class="fw-bold">Tamaño:</span>
                                 <p class="text-dark fst-italic">{{ $articulo->consolas->nombre }}</p>
                             </li>

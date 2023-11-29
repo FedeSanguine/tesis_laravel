@@ -23,7 +23,7 @@ class ArticulosSeeder extends Seeder
                 'title' => 'Elden Ring',
                 'formato' => '4 años',
                 'descripcion' => 'Perro raza mestizo, completamente sano, alergico al tomate',
-                'imagen' => null,
+                'imagen' => '/public/storage/seeder_img/Jack4.jpg',
                 'descripcion_imagen' => null,
                 'created_at' => now(),
                 'updated_at' => now(),

@@ -75,7 +75,7 @@
         @if($articulo->imagen !== null && Storage::has('imgs/' . $articulo->imagen))
         <img class="mw-100" src="{{ Storage::url('imgs/' . $articulo->imagen) }}" alt="{{ $articulo->descripcion_imagen }}">
         @else
-        <img width="35%" src="../../../img/home.png" alt="imagen de carga"></p>
+        <img width="35%" src="../../img/home.png" alt="imagen de carga"></p>
         @endif
     </div>
     <div class="mb-3">
@@ -92,7 +92,7 @@
         <div class="text-danger" id="error-descripcion_imagen">{{ $message }}</div>
         @enderror
     </div>
-    <button type="submit" class="btn btn-primary">Guardar</button>
+    <button type="submit" class="btn btn-success">Guardar</button>
 </form>
 
 @endsection

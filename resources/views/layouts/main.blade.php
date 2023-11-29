@@ -8,6 +8,7 @@
     <title>@yield('title') :: CasaCucha</title>
     <link rel="icon" type="image/png" href="{{URL::asset('img/logo.png')}}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('/index.css') }}">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
     </svg>
     <header>
         <div id="app">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark flex-has-center ">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-success flex-has-center ">
                 <div class=" flex-end container">
                     <a class="navbar-brand" href="{{ route('home') }}">
                         <img src="{{URL::asset('img/logo.png')}}" alt="logo">
